@@ -8,6 +8,7 @@
 	},
 	"settings": {
         "#terminal.integrated.defaultProfile.linux#": "/bin/bash",
+		"terminal.integrated.gpuAcceleration": "off", // not sure if fonts look blurry only over RDP connection
 //		"go.toolsManagement.checkForUpdates": "local",
 //		"go.useLanguageServer": true,
 //		"go.gopath": "/go",
