@@ -25,10 +25,10 @@ RUN apt update \
     #&& apt autoremove -y \
     #&& apt clean -y
 
-RUN git clone https://github.com/emscripten-core/emsdk.git ${EMSDK} \
-    && cd ${EMSDK} \
-    # Fetch the latest version of the emsdk (not needed the first time you clone)
-    && git pull
+#RUN git clone https://github.com/emscripten-core/emsdk.git ${EMSDK} \
+#    && cd ${EMSDK} \
+#    # Fetch the latest version of the emsdk (not needed the first time you clone)
+#    && git pull
 
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=dialog
