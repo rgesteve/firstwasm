@@ -1,7 +1,10 @@
 {
 	"name": "Default codespace mod (slightly)",
 	"build": {
-		"dockerfile": "Dockerfile"
+		"dockerfile": "Dockerfile",
+//		"args": { "USERNAME": $(git config user.name),   // vscode says trying to fill values like this is an error
+//				   "USEREMAIL": $(git config user.email)
+//		},
 	},
 	"settings": {
         "#terminal.integrated.defaultProfile.linux#": "/bin/bash",
