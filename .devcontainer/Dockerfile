@@ -11,7 +11,8 @@ RUN apt update \
     wget \
     ca-certificates \
     build-essential \
-#   python3 python3-pip \
+    python3 python3-pip \
+    python \
 	git \
     # Create a non-root user to use if preferred - see https://aka.ms/vscode-remote/containers/non-root-user.
     && groupadd --gid $USER_GID $USERNAME \
