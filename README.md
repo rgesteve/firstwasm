@@ -1,2 +1,3 @@
 # firstwasm
-First take at wasm
+
+A few tries at getting started with wasm via Emscripten.
