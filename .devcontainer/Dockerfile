@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu:focal
 
 ARG USERNAME=codespace
 ARG USER_UID=1000
@@ -20,11 +20,11 @@ RUN apt-get update \
     # [Optional] Add sudo support for the non-root user
     && apt install -y sudo \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME\
-    && chmod 0440 /etc/sudoers.d/$USERNAME \
+    && chmod 0440 /etc/sudoers.d/$USERNAME 
     #
     # Clean up
-    && apt autoremove -y \
-    && apt clean -y
+    #&& apt autoremove -y \
+    #&& apt clean -y
 
 RUN git clone https://github.com/emscripten-core/emsdk.git ${EMSDK} \
     && cd ${EMSDK} \
